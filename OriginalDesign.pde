@@ -1,10 +1,12 @@
 void setup()
 {
-  size(500,500);
+  size(500,700);
 }
 void draw()
 {
-  ellipse(50,50,50,50);
+  fill (235,209,167)
+  rect(200,30,200,200);
+
 }
 
 
