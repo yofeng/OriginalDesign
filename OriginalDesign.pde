@@ -1,34 +1,51 @@
 void setup()
 {
-  size(700,500);
+	size(700,500);
+	while(true)
+	{
+	background();
+	draw();
+	}
 }
 
-pink = #FFCCCC
-purple = #FFCDFE
-gray = #696867
-black = #1F1102fill(255,255,255);
-
-List<String> colors = new ArrayList<String>();
-colors.add(purple)
-colors.add(black)
-colors.add(purple)
-colors.add(black)
-String random = colors.get(new Random().nextInt(colors.size(4)));
+int x = 0;
+//int x2 = 25;
+//int x3 = 12;
+//int x4 = 37;
 
 void draw()
 {
-  fill(255,255,255);
-  rect(0,0,700,500);
-  fill(random);
+	fill(255,175,255);
+	stroke(0,0,0);
+	ellipse(x,200,50,70);
+	//fill(255,175,255);
+	//triangle(x2,200, x4,220, x4,220);
+	//fill(255,175,255);
+	//line(x3,200,x4,275);
+
+	x = x + 5;
+	//x2 = x2 + 5;
+	//x3 = x3 + 5;
+	//x4 = x4 + 5;
+	
+	//if(x2 > 687)
+	//{
+	//x2 = 0;
+	//}
+	//if(x3> 675)
+	//{
+	//x3 = -12;
+	//}
+	//if(x4>700)
+	//{
+	//x4 = 12;
+	//}
 }
 
-
-void circle()
+void background()
 {
-	ellipse(x,100,50,50);
-  x = x + 5;
+	fill(205,251,255);
+	rect(0,0,700,300);
+	fill(139,239,139);
+	rect(0,300,700,200);
 }
-
-//if mouseClicked(){
-
-//}
